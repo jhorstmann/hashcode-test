@@ -1,0 +1,17 @@
+[package]
+name = "hashcode-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hashbrown = { version = "0.14.2", features = ["raw"] }
+rand = "0.8.5"
+
+[dev-dependencies]
+criterion = "0.5.1"
+jemallocator = "0.5.0"
+jemalloc-sys = "0.5.0"
+
+[[bench]]
+name = "bench_count_distinct"
+harness = false
